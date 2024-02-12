@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './Components/Navbar';
 import Navbarch from './Components/Navbar';
@@ -11,6 +11,8 @@ import Femme from './Components/Home/Femme';
 import Acceuil from './Components/Acceuil';
 import Promoshf from './Components/Home/Promos';
 import { useState } from 'react';
+import Footer from './Components/Footer';
+
 
 function App() {
   const [searchdata, setsearchdata] = useState("")
@@ -22,14 +24,18 @@ function App() {
          
        <Navbarch fnct={searchd}/>
           <Banier />
+          
 
 <Routes>
 <Route path='/' element={<Acceuil data={searchdata}/>} />
   <Route path='/homme' element={<Homme />} />
   <Route path='/femme' element={<Femme />} />
   <Route path='/promos' element={<Promoshf  />} />
-</Routes>
+  <Route path='/promoshomme'element={<promoshomme />} />
+  <Route path='/promofemme'element={<promosfemme />} />
+ </Routes><Footer />
     </div>
+    
   );
 }
 
