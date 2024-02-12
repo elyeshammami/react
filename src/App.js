@@ -12,6 +12,10 @@ import Acceuil from './Components/Acceuil';
 import Promoshf from './Components/Home/Promos';
 import { useState } from 'react';
 import Footer from './Components/Footer';
+import Login from './Components/Login';
+import Panier from './Components/Panier';
+import Register from './Components/Register';
+
 
 
 function App() {
@@ -21,7 +25,9 @@ function App() {
   }
   return (
     <div className="App">
-         
+{/* <Login /> */}
+{/* <Panier /> */}
+<Register />
        <Navbarch fnct={searchd}/>
           <Banier />
           
